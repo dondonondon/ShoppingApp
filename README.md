@@ -6,5 +6,5 @@ Thanks for
 Jeyhun Kelov
 
 Application : 
-[Android App]([https://github.com/dondonondon/ShoppingApp](https://github.com/dondonondon/ShoppingApp/blob/main/bin/Android-32Bit.rar))
-[Desktop App]([https://github.com/dondonondon/ShoppingApp](https://github.com/dondonondon/ShoppingApp/blob/main/bin/Desktop-32Bit.rar))
+[Android App](https://github.com/dondonondon/ShoppingApp/blob/main/bin/Android-32Bit.rar)
+[Desktop App](https://github.com/dondonondon/ShoppingApp/blob/main/bin/Desktop-32Bit.rar)
