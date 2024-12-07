@@ -1,0 +1,523 @@
+object FSearchHome: TFSearchHome
+  Size.Width = 360.000000000000000000
+  Size.Height = 720.000000000000000000
+  Size.PlatformDefault = False
+  object background: TRectangle
+    StyleName = 'container'
+    Align = Contents
+    Fill.Color = xFFFCFCFC
+    Size.Width = 360.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object loMain: TLayout
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 664.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object loHistorySearch: TLayout
+      Align = Contents
+      Size.Width = 360.000000000000000000
+      Size.Height = 664.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object reBackgroundHistorySearch: TRectangle
+        StyleName = 'container'
+        Align = Contents
+        Fill.Color = claBlack
+        Opacity = 0.750000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 664.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        OnClick = reBackgroundHistorySearchClick
+      end
+      object loContainerHistorySearch: TLayout
+        Align = Top
+        Size.Width = 360.000000000000000000
+        Size.Height = 345.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Rectangle1: TRectangle
+          StyleName = 'container'
+          Align = Contents
+          Corners = [BottomLeft, BottomRight]
+          Fill.Color = claWhite
+          Size.Width = 360.000000000000000000
+          Size.Height = 345.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 12.000000000000000000
+          YRadius = 12.000000000000000000
+        end
+        object lbData: TListBox
+          Align = Top
+          Size.Width = 360.000000000000000000
+          Size.Height = 345.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'transparentlistboxstyle'
+          TabOrder = 0
+          ShowScrollBars = False
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 360.000000000000000000
+          Viewport.Height = 345.000000000000000000
+          object ListBoxItem1: TListBoxItem
+            Selectable = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 57.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            object CornerButton1: TCornerButton
+              Align = Left
+              Images = DM.img
+              ImageIndex = 4
+              Margins.Left = 8.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = 8.000000000000000000
+              Margins.Bottom = 8.000000000000000000
+              Position.X = 8.000000000000000000
+              Position.Y = 8.000000000000000000
+              Sides = [Top, Left, Bottom, Right]
+              Size.Width = 25.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'btnImg'
+              TabOrder = 1
+              TextSettings.Trimming = None
+              XRadius = 8.000000000000000000
+              YRadius = 8.000000000000000000
+              OnClick = btnBackClick
+            end
+            object CornerButton2: TCornerButton
+              Align = Right
+              Images = DM.img
+              ImageIndex = 5
+              Margins.Left = 8.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = 8.000000000000000000
+              Margins.Bottom = 8.000000000000000000
+              Position.X = 327.000000000000000000
+              Position.Y = 8.000000000000000000
+              Sides = [Top, Left, Bottom, Right]
+              Size.Width = 25.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'btnImg'
+              TabOrder = 0
+              TextSettings.Trimming = None
+              XRadius = 8.000000000000000000
+              YRadius = 8.000000000000000000
+              OnClick = btnBackClick
+            end
+            object Label3: TLabel
+              StyleName = 'lblTempDesc'
+              Align = Client
+              AutoSize = True
+              StyledSettings = [Family, FontColor]
+              Size.Width = 278.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'lblMain'
+              TextSettings.Font.Size = 14.000000000000000000
+              Text = 'Ashgabat, 1 Mkr, Ul. Swaboda, Dom '#8470'16A (Beki), 271496'
+              TabOrder = 6
+            end
+          end
+          object ListBoxItem2: TListBoxItem
+            Selectable = False
+            Position.Y = 57.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 57.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            object CornerButton3: TCornerButton
+              Align = Left
+              Images = DM.img
+              ImageIndex = 4
+              Margins.Left = 8.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = 8.000000000000000000
+              Margins.Bottom = 8.000000000000000000
+              Position.X = 8.000000000000000000
+              Position.Y = 8.000000000000000000
+              Sides = [Top, Left, Bottom, Right]
+              Size.Width = 25.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'btnImg'
+              TabOrder = 1
+              TextSettings.Trimming = None
+              XRadius = 8.000000000000000000
+              YRadius = 8.000000000000000000
+              OnClick = btnBackClick
+            end
+            object CornerButton4: TCornerButton
+              Align = Right
+              Images = DM.img
+              ImageIndex = 5
+              Margins.Left = 8.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = 8.000000000000000000
+              Margins.Bottom = 8.000000000000000000
+              Position.X = 327.000000000000000000
+              Position.Y = 8.000000000000000000
+              Sides = [Top, Left, Bottom, Right]
+              Size.Width = 25.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'btnImg'
+              TabOrder = 0
+              TextSettings.Trimming = None
+              XRadius = 8.000000000000000000
+              YRadius = 8.000000000000000000
+              OnClick = btnBackClick
+            end
+            object Label1: TLabel
+              StyleName = 'lblTempDesc'
+              Align = Client
+              AutoSize = True
+              StyledSettings = [Family, FontColor]
+              Size.Width = 278.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'lblMain'
+              TextSettings.Font.Size = 14.000000000000000000
+              Text = 'Ashgabat, 1 Mkr, Ul. Swaboda, Dom '#8470'16A (Beki), 271496'
+              TabOrder = 6
+            end
+          end
+          object ListBoxItem3: TListBoxItem
+            Selectable = False
+            Position.Y = 114.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 57.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object CornerButton5: TCornerButton
+              Align = Left
+              Images = DM.img
+              ImageIndex = 4
+              Margins.Left = 8.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = 8.000000000000000000
+              Margins.Bottom = 8.000000000000000000
+              Position.X = 8.000000000000000000
+              Position.Y = 8.000000000000000000
+              Sides = [Top, Left, Bottom, Right]
+              Size.Width = 25.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'btnImg'
+              TabOrder = 1
+              TextSettings.Trimming = None
+              XRadius = 8.000000000000000000
+              YRadius = 8.000000000000000000
+              OnClick = btnBackClick
+            end
+            object CornerButton6: TCornerButton
+              Align = Right
+              Images = DM.img
+              ImageIndex = 5
+              Margins.Left = 8.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = 8.000000000000000000
+              Margins.Bottom = 8.000000000000000000
+              Position.X = 327.000000000000000000
+              Position.Y = 8.000000000000000000
+              Sides = [Top, Left, Bottom, Right]
+              Size.Width = 25.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'btnImg'
+              TabOrder = 0
+              TextSettings.Trimming = None
+              XRadius = 8.000000000000000000
+              YRadius = 8.000000000000000000
+              OnClick = btnBackClick
+            end
+            object Label2: TLabel
+              StyleName = 'lblTempDesc'
+              Align = Client
+              AutoSize = True
+              StyledSettings = [Family, FontColor]
+              Size.Width = 278.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'lblMain'
+              TextSettings.Font.Size = 14.000000000000000000
+              Text = 'Ashgabat, 1 Mkr, Ul. Swaboda, Dom '#8470'16A (Beki), 271496'
+              TabOrder = 6
+            end
+          end
+          object ListBoxItem4: TListBoxItem
+            Selectable = False
+            Position.Y = 171.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 57.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object CornerButton7: TCornerButton
+              Align = Left
+              Images = DM.img
+              ImageIndex = 4
+              Margins.Left = 8.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = 8.000000000000000000
+              Margins.Bottom = 8.000000000000000000
+              Position.X = 8.000000000000000000
+              Position.Y = 8.000000000000000000
+              Sides = [Top, Left, Bottom, Right]
+              Size.Width = 25.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'btnImg'
+              TabOrder = 1
+              TextSettings.Trimming = None
+              XRadius = 8.000000000000000000
+              YRadius = 8.000000000000000000
+              OnClick = btnBackClick
+            end
+            object CornerButton8: TCornerButton
+              Align = Right
+              Images = DM.img
+              ImageIndex = 5
+              Margins.Left = 8.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = 8.000000000000000000
+              Margins.Bottom = 8.000000000000000000
+              Position.X = 327.000000000000000000
+              Position.Y = 8.000000000000000000
+              Sides = [Top, Left, Bottom, Right]
+              Size.Width = 25.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'btnImg'
+              TabOrder = 0
+              TextSettings.Trimming = None
+              XRadius = 8.000000000000000000
+              YRadius = 8.000000000000000000
+              OnClick = btnBackClick
+            end
+            object Label4: TLabel
+              StyleName = 'lblTempDesc'
+              Align = Client
+              AutoSize = True
+              StyledSettings = [Family, FontColor]
+              Size.Width = 278.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'lblMain'
+              TextSettings.Font.Size = 14.000000000000000000
+              Text = 'Ashgabat, 1 Mkr, Ul. Swaboda, Dom '#8470'16A (Beki), 271496'
+              TabOrder = 6
+            end
+          end
+          object ListBoxItem5: TListBoxItem
+            Selectable = False
+            Position.Y = 228.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 57.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object CornerButton9: TCornerButton
+              Align = Left
+              Images = DM.img
+              ImageIndex = 4
+              Margins.Left = 8.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = 8.000000000000000000
+              Margins.Bottom = 8.000000000000000000
+              Position.X = 8.000000000000000000
+              Position.Y = 8.000000000000000000
+              Sides = [Top, Left, Bottom, Right]
+              Size.Width = 25.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'btnImg'
+              TabOrder = 1
+              TextSettings.Trimming = None
+              XRadius = 8.000000000000000000
+              YRadius = 8.000000000000000000
+              OnClick = btnBackClick
+            end
+            object CornerButton10: TCornerButton
+              Align = Right
+              Images = DM.img
+              ImageIndex = 5
+              Margins.Left = 8.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = 8.000000000000000000
+              Margins.Bottom = 8.000000000000000000
+              Position.X = 327.000000000000000000
+              Position.Y = 8.000000000000000000
+              Sides = [Top, Left, Bottom, Right]
+              Size.Width = 25.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'btnImg'
+              TabOrder = 0
+              TextSettings.Trimming = None
+              XRadius = 8.000000000000000000
+              YRadius = 8.000000000000000000
+              OnClick = btnBackClick
+            end
+            object Label5: TLabel
+              StyleName = 'lblTempDesc'
+              Align = Client
+              AutoSize = True
+              StyledSettings = [Family, FontColor]
+              Size.Width = 278.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'lblMain'
+              TextSettings.Font.Size = 14.000000000000000000
+              Text = 'Ashgabat, 1 Mkr, Ul. Swaboda, Dom '#8470'16A (Beki), 271496'
+              TabOrder = 6
+            end
+          end
+          object ListBoxItem6: TListBoxItem
+            Selectable = False
+            Position.Y = 285.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 57.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object CornerButton11: TCornerButton
+              Align = Left
+              Images = DM.img
+              ImageIndex = 4
+              Margins.Left = 8.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = 8.000000000000000000
+              Margins.Bottom = 8.000000000000000000
+              Position.X = 8.000000000000000000
+              Position.Y = 8.000000000000000000
+              Sides = [Top, Left, Bottom, Right]
+              Size.Width = 25.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'btnImg'
+              TabOrder = 1
+              TextSettings.Trimming = None
+              XRadius = 8.000000000000000000
+              YRadius = 8.000000000000000000
+              OnClick = btnBackClick
+            end
+            object CornerButton12: TCornerButton
+              Align = Right
+              Images = DM.img
+              ImageIndex = 5
+              Margins.Left = 8.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = 8.000000000000000000
+              Margins.Bottom = 8.000000000000000000
+              Position.X = 327.000000000000000000
+              Position.Y = 8.000000000000000000
+              Sides = [Top, Left, Bottom, Right]
+              Size.Width = 25.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'btnImg'
+              TabOrder = 0
+              TextSettings.Trimming = None
+              XRadius = 8.000000000000000000
+              YRadius = 8.000000000000000000
+              OnClick = btnBackClick
+            end
+            object Label6: TLabel
+              StyleName = 'lblTempDesc'
+              Align = Client
+              AutoSize = True
+              StyledSettings = [Family, FontColor]
+              Size.Width = 278.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'lblMain'
+              TextSettings.Font.Size = 14.000000000000000000
+              Text = 'Ashgabat, 1 Mkr, Ul. Swaboda, Dom '#8470'16A (Beki), 271496'
+              TabOrder = 6
+            end
+          end
+        end
+      end
+    end
+  end
+  object loHeader: TLayout
+    Align = Top
+    Size.Width = 360.000000000000000000
+    Size.Height = 56.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object reHeader: TRectangle
+      StyleName = 'header'
+      Align = Contents
+      Fill.Color = claWhite
+      Size.Width = 360.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object seHeader: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.150000005960464500
+      ShadowColor = claBlack
+    end
+    object btnBack: TCornerButton
+      Align = Left
+      Images = DM.img
+      ImageIndex = 0
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 25.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'btnImg'
+      TabOrder = 0
+      TextSettings.Trimming = None
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+      OnClick = btnBackClick
+    end
+    object edSearch: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      StyleLookup = 'edSearchBar'
+      TabOrder = 1
+      TextSettings.Font.Size = 15.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Size.Width = 311.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Search...'
+      StyledSettings = [Family, Style, FontColor]
+      OnClick = edSearchClick
+      object btnSearch: TCornerButton
+        Align = Left
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnImg'
+        TabOrder = 0
+        TextSettings.Trimming = None
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnSearchClick
+      end
+    end
+  end
+end

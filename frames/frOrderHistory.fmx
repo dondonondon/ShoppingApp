@@ -1,0 +1,176 @@
+object FOrderHistory: TFOrderHistory
+  Size.Width = 360.000000000000000000
+  Size.Height = 720.000000000000000000
+  Size.PlatformDefault = False
+  object background: TRectangle
+    StyleName = 'container'
+    Align = Contents
+    Fill.Color = xFFFCFCFC
+    Size.Width = 360.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object loMain: TLayout
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 664.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object loDetailClient: TLayout
+      Align = Top
+      Size.Width = 360.000000000000000000
+      Size.Height = 113.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object tempIcon: TCornerButton
+        StyleName = 'tempIcon'
+        HitTest = False
+        Images = DM.img
+        ImageIndex = 8
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 8.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 14.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnImg'
+        TabOrder = 0
+        TextSettings.Trimming = None
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+      end
+      object lblTempTitle: TLabel
+        StyleName = 'lblTempTitle'
+        Anchors = [akLeft, akTop, akRight]
+        StyledSettings = [Family]
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 169.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 64.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 282.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'lblMain'
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Ashgabat, 1 Mkr, Ul. Swaboda, Dom N16A (Beki), 271496'
+        TabOrder = 10
+      end
+      object lblTempDesc: TLabel
+        StyleName = 'lblTempDesc'
+        Anchors = [akLeft, akTop, akRight]
+        AutoSize = True
+        StyledSettings = [Family]
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 169.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 332.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'lblMain'
+        TextSettings.Font.Size = 12.500000000000000000
+        Text = 
+          'The Product Designer is responsible for articulating and concept' +
+          'ualizing our product.'
+        TabOrder = 9
+      end
+    end
+    object imgNoData: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Anchors = []
+      Position.X = 60.000000000000000000
+      Position.Y = 168.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 263.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lbData: TListBox
+      Align = Client
+      Size.Width = 360.000000000000000000
+      Size.Height = 551.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 0
+      ShowScrollBars = False
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 360.000000000000000000
+      Viewport.Height = 551.000000000000000000
+    end
+  end
+  object loHeader: TLayout
+    Align = Top
+    Size.Width = 360.000000000000000000
+    Size.Height = 56.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object reHeader: TRectangle
+      StyleName = 'header'
+      Align = Contents
+      Fill.Color = claWhite
+      Size.Width = 360.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object seHeader: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.150000005960464500
+      ShadowColor = claBlack
+    end
+    object lblTitle: TLabel
+      StyleName = 'lblTempTitle'
+      Align = Contents
+      AutoSize = True
+      StyledSettings = [Family]
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'lblMain'
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF0B1527
+      TextSettings.HorzAlign = Center
+      Text = 'Order History'
+      TabOrder = 9
+    end
+    object btnBack: TCornerButton
+      Align = Left
+      Images = DM.img
+      ImageIndex = 0
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 25.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'btnImg'
+      TabOrder = 0
+      TextSettings.Trimming = None
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+      OnClick = btnBackClick
+    end
+  end
+end

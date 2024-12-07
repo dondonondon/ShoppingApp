@@ -1,0 +1,518 @@
+object FNotif: TFNotif
+  Size.Width = 360.000000000000000000
+  Size.Height = 720.000000000000000000
+  Size.PlatformDefault = False
+  object background: TRectangle
+    StyleName = 'container'
+    Align = Contents
+    Fill.Color = xFFFCFCFC
+    Size.Width = 360.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object loMain: TLayout
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 664.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object lbData: TListBox
+      Align = Contents
+      Size.Width = 360.000000000000000000
+      Size.Height = 664.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 0
+      ShowScrollBars = False
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 360.000000000000000000
+      Viewport.Height = 664.000000000000000000
+      object ListBoxItem1: TListBoxItem
+        Selectable = False
+        Size.Width = 360.000000000000000000
+        Size.Height = 121.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Layout1: TLayout
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 20.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 105.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Rectangle1: TRectangle
+            Align = Contents
+            Fill.Color = xFFF4F8FB
+            HitTest = False
+            Size.Width = 320.000000000000000000
+            Size.Height = 105.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFF4F8FB
+            XRadius = 10.000000000000000000
+            YRadius = 10.000000000000000000
+          end
+          object Label2: TLabel
+            StyleName = 'lblTempTitle'
+            Anchors = [akLeft, akTop, akRight]
+            AutoSize = True
+            StyledSettings = [Family, FontColor]
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 169.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 40.000000000000000000
+            Position.Y = 14.000000000000000000
+            Size.Width = 266.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'lblMain'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = #8470' 4006581016825'
+            TabOrder = 7
+          end
+          object Label3: TLabel
+            StyleName = 'lblTempDesc'
+            Anchors = [akLeft, akTop, akRight]
+            AutoSize = True
+            StyledSettings = [Family, FontColor]
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 169.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 14.000000000000000000
+            Position.Y = 48.000000000000000000
+            Size.Width = 292.000000000000000000
+            Size.Height = 38.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'lblMain'
+            TextSettings.Font.Size = 14.000000000000000000
+            Text = '4006581016825 - 06.08.2023 / 13:21 Order accepted'
+            TabOrder = 6
+          end
+          object Circle1: TCircle
+            StyleName = 'ciTempIndicator'
+            Fill.Color = xFFFBA13A
+            Position.X = 14.000000000000000000
+            Position.Y = 14.000000000000000000
+            Size.Width = 14.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+          end
+        end
+      end
+      object ListBoxItem2: TListBoxItem
+        Selectable = False
+        Position.Y = 121.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 121.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Layout2: TLayout
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 20.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 105.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Rectangle2: TRectangle
+            Align = Contents
+            Fill.Color = xFFF4F8FB
+            HitTest = False
+            Size.Width = 320.000000000000000000
+            Size.Height = 105.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFF4F8FB
+            XRadius = 10.000000000000000000
+            YRadius = 10.000000000000000000
+          end
+          object Label4: TLabel
+            StyleName = 'lblTempTitle'
+            Anchors = [akLeft, akTop, akRight]
+            AutoSize = True
+            StyledSettings = [Family, FontColor]
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 169.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 40.000000000000000000
+            Position.Y = 14.000000000000000000
+            Size.Width = 266.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'lblMain'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = #8470' 4006581016825'
+            TabOrder = 7
+          end
+          object Label5: TLabel
+            StyleName = 'lblTempDesc'
+            Anchors = [akLeft, akTop, akRight]
+            AutoSize = True
+            StyledSettings = [Family, FontColor]
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 169.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 14.000000000000000000
+            Position.Y = 48.000000000000000000
+            Size.Width = 292.000000000000000000
+            Size.Height = 38.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'lblMain'
+            TextSettings.Font.Size = 14.000000000000000000
+            Text = 
+              '4006581016825 - 02.08.2023 / 08:30 This product is currently out' +
+              ' of stock'
+            TabOrder = 6
+          end
+          object Circle2: TCircle
+            StyleName = 'ciTempIndicator'
+            Fill.Color = xFFFBA13A
+            Position.X = 14.000000000000000000
+            Position.Y = 14.000000000000000000
+            Size.Width = 14.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+          end
+        end
+      end
+      object ListBoxItem3: TListBoxItem
+        Selectable = False
+        Position.Y = 242.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 121.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Layout3: TLayout
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 20.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 105.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Rectangle3: TRectangle
+            Align = Contents
+            Fill.Color = xFFF4F8FB
+            HitTest = False
+            Size.Width = 320.000000000000000000
+            Size.Height = 105.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFF4F8FB
+            XRadius = 10.000000000000000000
+            YRadius = 10.000000000000000000
+          end
+          object Label6: TLabel
+            StyleName = 'lblTempTitle'
+            Anchors = [akLeft, akTop, akRight]
+            AutoSize = True
+            StyledSettings = [Family, FontColor]
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 169.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 14.000000000000000000
+            Position.Y = 14.000000000000000000
+            Size.Width = 292.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'lblMain'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = #8470' 4006581016825'
+            TabOrder = 7
+          end
+          object Label7: TLabel
+            StyleName = 'lblTempDesc'
+            Anchors = [akLeft, akTop, akRight]
+            AutoSize = True
+            StyledSettings = [Family, FontColor]
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 169.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 14.000000000000000000
+            Position.Y = 48.000000000000000000
+            Size.Width = 292.000000000000000000
+            Size.Height = 38.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'lblMain'
+            TextSettings.Font.Size = 14.000000000000000000
+            Text = '4006581016825 - 06.08.2023 / 13:21 Order accepted'
+            TabOrder = 6
+          end
+        end
+      end
+      object ListBoxItem4: TListBoxItem
+        Selectable = False
+        Position.Y = 363.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 121.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Layout4: TLayout
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 20.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 105.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Rectangle4: TRectangle
+            Align = Contents
+            Fill.Color = xFFF4F8FB
+            HitTest = False
+            Size.Width = 320.000000000000000000
+            Size.Height = 105.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFF4F8FB
+            XRadius = 10.000000000000000000
+            YRadius = 10.000000000000000000
+          end
+          object Label8: TLabel
+            StyleName = 'lblTempTitle'
+            Anchors = [akLeft, akTop, akRight]
+            AutoSize = True
+            StyledSettings = [Family, FontColor]
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 169.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 14.000000000000000000
+            Position.Y = 14.000000000000000000
+            Size.Width = 292.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'lblMain'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = #8470' 4006581016825'
+            TabOrder = 7
+          end
+          object Label9: TLabel
+            StyleName = 'lblTempDesc'
+            Anchors = [akLeft, akTop, akRight]
+            AutoSize = True
+            StyledSettings = [Family, FontColor]
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 169.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 14.000000000000000000
+            Position.Y = 48.000000000000000000
+            Size.Width = 292.000000000000000000
+            Size.Height = 38.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'lblMain'
+            TextSettings.Font.Size = 14.000000000000000000
+            Text = 
+              '4006581016825 - 02.08.2023 / 08:30 This product is currently out' +
+              ' of stock'
+            TabOrder = 6
+          end
+        end
+      end
+    end
+  end
+  object loHeader: TLayout
+    Align = Top
+    Size.Width = 360.000000000000000000
+    Size.Height = 56.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object reHeader: TRectangle
+      StyleName = 'header'
+      Align = Contents
+      Fill.Color = claWhite
+      Size.Width = 360.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object seHeader: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.150000005960464500
+      ShadowColor = claBlack
+    end
+    object Label1: TLabel
+      StyleName = 'lblTempTitle'
+      Align = Contents
+      AutoSize = True
+      StyledSettings = [Family, FontColor]
+      Size.Width = 360.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'lblMain'
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Notification'
+      TabOrder = 10
+    end
+    object btnBack: TCornerButton
+      Anchors = [akLeft, akTop, akBottom]
+      Images = DM.img
+      ImageIndex = 0
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 40.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'btnImg'
+      TabOrder = 0
+      TextSettings.Trimming = None
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+      OnClick = btnBackClick
+    end
+  end
+  object loTemp: TLayout
+    Position.X = 16.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 4
+    object reTempBackground: TRectangle
+      Align = Contents
+      Fill.Bitmap.Bitmap.PNG = {
+        89504E470D0A1A0A0000000D4948445200000144000000B808060000009BCD95
+        100000000473424954080808087C0864880000087849444154789CEDDDCD8E1C
+        D51500E0737A06632288CC22523616245B16E10DA23C418822AF41BC40941708
+        269B288B44E109887881C01BF0086491651423D8451196B0639B19E664D155DD
+        553555EDB135991AB8DF27B5DCD33F55A77EFAFAFEDF8C03AAEAD6A327276F7F
+        7B96BFA8AC373799AF1DFA3CC0B593F15956DCABAA4F5E7EE9C65F0F7F74C1C3
+        27A76F55D5871171EBB2E303584346DDAB8AF79712C6CDF485AACA078F4FFE52
+        557F0B8921F03D5291AF47E6875F3F3AB95B55E73284E712C4FF7E73FA5E44FC
+        E60A6203584566BCF7F0C9E99FCFBD3EFCE3C137A7EFC4597D78756101ACE72C
+        F357AFDC38FA24332B6292203E7C7CFAAF8A7A7D95C800AEDEFD93178F7FF26A
+        E6FD887D91391F3C3A7D47620834E6D60B8F4EDEE9EB13FB04B12AEBAD158302
+        58456EF2E77D9179D7A892B9D1C710684E45BED93FEFEB10F3C1E393B395E201
+        58D5CB375F181799578C05E05AD835AAAC1A05C08AA68D2A00CDCADCE6091599
+        01B669601E87E2324046446DAA2AAA641081A66DFB216666F5E567805655556A
+        5401E86CBAE6666566A0659999258708D0B5326FBA41CD2A1181966544C4F1DA
+        51005C03A3D96ED42102CD538708346F3A96591D22D0ACCC2CFD1001B6323377
+        FD10015A577DB71B80E6C921020C2777583B12809599311B604882083019A902
+        D032456680216399012246235574BD019A9699A51F2240471D22D0BCDD6C373A
+        6603ADEBD3418D2A40F3CC8708D0D9E51035AA00AD9BE61015998166ED728899
+        19728900DB1C626969065A674D1580AD5D1DA2E23240744566758840EB766399
+        D521028DDBCE76D32586728840D332B38ED70E02E01AC8AAD2311B20A2AB43EC
+        9FAF1A09C035602C33D0BCAA6D21F9580B33D0BACC2C2355003ABB3A44C56680
+        AE0E31537A08D077CC568F0834CB120200137D1DE2DA7100ACA69F28DBE40E00
+        DD44D99BBEFFCDDAD100AC68548708D0B2FD42F58ACC40E372385245911968DE
+        26BA79C0005AD60FDD2B23550034AA00440C1A55640F01A25B86348C6506DAB6
+        ED87D875CA964B045AB62D32772355D60E06604DFB912A3A66038DDB8F543196
+        1968DC2887B86E2800EBB2C8144067974334740F689EA17B005B8ACC009D1CAE
+        CBBC7630006B1A4D10BB6E2800EBB28400C040F663999599819655446C57DD5B
+        3B12809529320344EC1B962D320534AF5F9F5EB71B80D88F540120F44304D891
+        4304E8E88708D0D9282E036C6DA29BF666ED40005664090180CE7EB69B508708
+        346E3841AC2C22D03C235500063366A7196F80960D2777A85064061AD6670A15
+        990174BB0118D3ED0660D20F11A079C76B0700B0B67EF8F266F80740AB763366
+        EB8708B42C33A3AAB22F32CB21022DABCCD4CA0CB0AB43EC9EC82102CDEAFB62
+        6FD41F02980F11A0B7EF76138ACC40E38613C4CA21024DDBF5430C3944A06DEA
+        10013AEA10013A7288004372880093223340F3248800833AC40C758800DB6548
+        4D100BB46C3463B655F700ACCB0CB09FFE6BE53800AE837DA38A391181C6EDEA
+        10258640EB2C540F30645D66808E759981E655550E67CC9643049AD72F432A87
+        0834ABEF8778DC1597E510819655666A6506E819BA07309C20562B33D0B81AB6
+        320334CDBACC005BA33555149981968DC632CB21022DDBE61075CC06E872883A
+        66036CC733AB430408ADCC00BD512B3340CBCC980DD0D10F1120623F9F832504
+        80E6599719606F3BB943555997192074CC0688886D3FC4E3EEB91C22D0B2AC2A
+        758800D1F743ECD7235D3B1A803565666D32B3FA26678096E9980D3019A9228B
+        08346FA3FE10603C412C40CBF64B0858A81E68DC7EFA2FADCC40EBAA2A8F1599
+        0122874B0800344FB71B80C912028ACD40F3E410013AFD12026BC701B0A6FDD0
+        3DDD6E80968D16990268599F293C0EF58740E3BA1C626E62DBC25C67559FAF1B
+        12C01AF25E66C6B0637666E667ABC604B0823AFBF6EF31ED8798519FAE1611C0
+        4A2AF3E37E1AC4BEFE30FFF1C517AFBEF6A31FFF33226EAD171AC055AA7B2FDF
+        BCF1D3886D3DE22E87F8C6EDDB5F9D9C9DBDBB62640057EAACE2FDE8DA51A693
+        3BD4AB3F78F1E38AF860A5D800AE4CD5D9FB3F7CE9C647C3D7A65D6E3222F2EB
+        474F7E97B979EFEA4203B83A15F5C12B376FFC3626F3384C3B665755D59FFEF8
+        87DF9F9CD6BBBAE200DF271571FFF1C9C9AFBBC4306292299CCB218E9E7FF5E0
+        D1DBC79BCD2F6393AF67E4CFFE8FB1025CBAB3AACFB3EAB3B3A84FBFFCCFBF3F
+        7AE3F6EDFBB1CF192E4FE43059812FBBC726F6ABF36D9EF6B87BF7EE26228EBA
+        47FFFAECF33B77EE1C45C451F79D43DB3BF8FAA1EF0FDE3F177FB7FFCDD36258
+        781C4DF77F9138FA7DCE7D76F8FED2791D9CDF73FBACAABC682C4BC732787E74
+        28D6A5EB31F8ECB9E3588A6DF8F7D2F13FE55A0FAF5F4EEF8D03F1CFED6BE9BE
+        1DBD36DCEE64FBA37BFA02E76EB7BDC9B11F2D9C8B83E7E7A2D7A78FFFCE9D3B
+        4BD7F968EEFB17DCCF75FEFDF7E9DA34BDBBB08C881CFED8267F8F7634483833
+        6297904E83193E1F7E6EB8BDCDCC76736E7BC3389612BFC93E3633B18D4EEE74
+        3F83BF478F85E3CB03FF81E45C82D09FCFE1395E3AF7739F1B1CF7F43C8E62EC
+        16155B3C7FD3F33EDCCECC3EE66EB443D77CE9186663593AB733FB9F5EFBA57B
+        66EE3FF8A5EDCDEE77691FD3F33D38CF87CED5709BE78E67F8DDB9FB62700ECF
+        5DF3E9637ABC93FBF3E06FAADFFF77F8F7DF7FA79711CF9F204E4D3736FC77BA
+        E391E17726DF9F069B33DF19EDFFC06BD39B200637674C5F9FEC6FFAFCD0F12D
+        C5B914EFD2FB7346F1CF7D6710FBA16DCFC53EFB9969E960F2A38E85EF1E8A7F
+        F1BDA5FF5C868FC90F60691FA3635AB82797BE37B270AE9FE5780FDD43739F1F
+        FD3D39D7E74CAEF7A16D3E73FC17FC8D8DDEFB0EFFFE2F27219C6EE4B217B87F
+        DA0D7119FBBDC849799693F7B458E6DE1F263473C77C19C73753F571E8FDC573
+        FF94D716AFD7655FCBE7394773C7BA74FC31732CCFBACFE7BC96CF75AD9FF5C7
+        7DD16B7BE8BBDF87DFFF45FC0F4B322EAA44BDC98A0000000049454E44AE4260
+        82}
+      Fill.Bitmap.WrapMode = TileStretch
+      Fill.Kind = Bitmap
+      HitTest = False
+      Size.Width = 320.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFF4F8FB
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+    end
+    object lblTempTitle: TLabel
+      StyleName = 'lblTempTitle'
+      Anchors = [akLeft, akTop, akRight]
+      AutoSize = True
+      StyledSettings = [Family, FontColor]
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 169.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 40.000000000000000000
+      Position.Y = 14.000000000000000000
+      Size.Width = 266.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'lblMain'
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = #8470' 4006581016825'
+      TabOrder = 7
+    end
+    object lblTempDesc: TLabel
+      StyleName = 'lblTempDesc'
+      Anchors = [akLeft, akTop, akRight]
+      AutoSize = True
+      StyledSettings = [Family, FontColor]
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 169.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 14.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 292.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'lblMain'
+      TextSettings.Font.Size = 14.000000000000000000
+      Text = '4006581016825 - 06.08.2023 / 13:21 Order accepted'
+      TabOrder = 6
+    end
+    object ciTempIndicator: TCircle
+      StyleName = 'ciTempIndicator'
+      Fill.Color = xFFFBA13A
+      Position.X = 14.000000000000000000
+      Position.Y = 14.000000000000000000
+      Size.Width = 14.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+  end
+end

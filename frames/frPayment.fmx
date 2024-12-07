@@ -1,0 +1,559 @@
+object FPayment: TFPayment
+  Size.Width = 360.000000000000000000
+  Size.Height = 720.000000000000000000
+  Size.PlatformDefault = False
+  object background: TRectangle
+    StyleName = 'container'
+    Align = Contents
+    Fill.Color = xFFFCFCFC
+    Size.Width = 360.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object loMain: TLayout
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 600.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object lbListInput: TListBox
+      Align = Client
+      Size.Width = 360.000000000000000000
+      Size.Height = 487.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 8
+      ShowScrollBars = False
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 360.000000000000000000
+      Viewport.Height = 487.000000000000000000
+      object ListBoxItem3: TListBoxItem
+        Selectable = False
+        TextSettings.FontColor = claNull
+        StyledSettings = [Family, Size, Style, Other]
+        Size.Width = 360.000000000000000000
+        Size.Height = 61.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label2: TLabel
+          StyleName = 'lblTempDesc'
+          StyledSettings = [Family]
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 169.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 123.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'lblMain'
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Sub Total + Tax'
+          TabOrder = 10
+        end
+        object edSubTotal: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          StyleLookup = 'edMain'
+          TabOrder = 41
+          ReadOnly = True
+          TextSettings.Font.Size = 12.500000000000000000
+          TextSettings.HorzAlign = Center
+          Position.X = 144.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = '0'
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object edTax: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          StyleLookup = 'edMain'
+          TabOrder = 40
+          ReadOnly = True
+          TextSettings.Font.Size = 12.500000000000000000
+          TextSettings.HorzAlign = Center
+          Position.X = 249.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 91.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = '0'
+          StyledSettings = [Family, Style, FontColor]
+        end
+      end
+      object ListBoxItem4: TListBoxItem
+        Selectable = False
+        TextSettings.FontColor = claNull
+        StyledSettings = [Family, Size, Style, Other]
+        Position.Y = 61.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 61.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label3: TLabel
+          StyleName = 'lblTempDesc'
+          StyledSettings = [Family]
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 169.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 123.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'lblMain'
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Discount'
+          TabOrder = 10
+        end
+        object edDiscount: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          StyleLookup = 'edMain'
+          TabOrder = 40
+          KeyboardType = NumberPad
+          FilterChar = '%0123456789.'
+          TextSettings.Font.Size = 12.500000000000000000
+          TextSettings.HorzAlign = Center
+          Position.X = 144.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 196.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = '0'
+          StyledSettings = [Family, Style, FontColor]
+          OnChange = edDiscountTyping
+          OnTyping = edDiscountTyping
+        end
+      end
+      object ListBoxItem1: TListBoxItem
+        Selectable = False
+        TextSettings.FontColor = claNull
+        StyledSettings = [Family, Size, Style, Other]
+        Position.Y = 122.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 66.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object Label4: TLabel
+          StyleName = 'lblTempDesc'
+          StyledSettings = [Family]
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 169.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 123.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'lblMain'
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Type of payment'
+          TabOrder = 10
+        end
+        object cbTypePayment: TComboBox
+          Anchors = [akLeft, akTop, akRight]
+          Items.Strings = (
+            'Choose Payment'
+            'Cash'
+            'Credit'
+            'Card')
+          ItemIndex = 0
+          Position.X = 144.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 196.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'cboxMain'
+          TabOrder = 11
+        end
+      end
+      object ListBoxItem2: TListBoxItem
+        Selectable = False
+        TextSettings.FontColor = claNull
+        StyledSettings = [Family, Size, Style, Other]
+        Position.Y = 188.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 66.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Label1: TLabel
+          StyleName = 'lblTempDesc'
+          StyledSettings = [Family]
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 169.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 123.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'lblMain'
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Credit'
+          TabOrder = 9
+        end
+        object Rectangle2: TRectangle
+          Anchors = [akLeft, akTop, akRight]
+          Fill.Color = xFFF4F8FB
+          Position.X = 144.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 196.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 8.000000000000000000
+          YRadius = 8.000000000000000000
+          object Label5: TLabel
+            StyleName = 'lblTempDesc'
+            StyledSettings = [Family]
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 169.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 14.000000000000000000
+            Size.Width = 83.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'lblMain'
+            TextSettings.Font.Size = 12.500000000000000000
+            Text = 'Credit'
+            TabOrder = 9
+          end
+          object swCredit: TSwitch
+            Anchors = [akRight]
+            IsChecked = False
+            Position.X = 131.000000000000000000
+            Position.Y = 12.000000000000000000
+            Size.Width = 57.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 10
+            OnClick = swCreditClick
+          end
+        end
+      end
+      object lbDate: TListBoxItem
+        Selectable = False
+        TextSettings.FontColor = claNull
+        StyledSettings = [Family, Size, Style, Other]
+        Position.Y = 254.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 66.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object Label6: TLabel
+          StyleName = 'lblTempDesc'
+          StyledSettings = [Family]
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 169.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 123.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'lblMain'
+          TextSettings.Font.Size = 12.500000000000000000
+          Text = 'Date'
+          TabOrder = 10
+        end
+        object dtCredit: TDateEdit
+          Date = 45560.000000000000000000
+          Format = 'yyyy-mm-dd'
+          Anchors = [akLeft, akTop, akRight]
+          Position.X = 144.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 196.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'dtMain'
+          StyledSettings = [Family, Style, FontColor]
+          TabOrder = 38
+          TextSettings.Font.Size = 12.500000000000000000
+          TextSettings.HorzAlign = Center
+        end
+      end
+      object ListBoxItem6: TListBoxItem
+        Selectable = False
+        TextSettings.FontColor = claNull
+        StyledSettings = [Family, Size, Style, Other]
+        Position.Y = 320.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 137.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Rectangle3: TRectangle
+          Align = Client
+          Fill.Color = xFFF4F8FB
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 8.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 8.000000000000000000
+          Size.Width = 340.000000000000000000
+          Size.Height = 121.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 8.000000000000000000
+          YRadius = 8.000000000000000000
+          object Memo1: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            StyledSettings = [Family, Style, FontColor]
+            TextSettings.Font.Size = 12.500000000000000000
+            Align = Contents
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Size.Width = 332.000000000000000000
+            Size.Height = 113.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'memTransparent'
+            TabOrder = 9
+            Viewport.Width = 328.000000000000000000
+            Viewport.Height = 109.000000000000000000
+          end
+        end
+      end
+    end
+    object loDetailClient: TLayout
+      Align = Top
+      Size.Width = 360.000000000000000000
+      Size.Height = 113.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object tempIcon: TCornerButton
+        StyleName = 'tempIcon'
+        HitTest = False
+        Images = DM.img
+        ImageIndex = 8
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 8.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 14.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnImg'
+        TabOrder = 0
+        TextSettings.Trimming = None
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+      end
+      object lblTempTitle: TLabel
+        StyleName = 'lblTempTitle'
+        Anchors = [akLeft, akTop, akRight]
+        StyledSettings = [Family]
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 169.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 64.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 282.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'lblMain'
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Ashgabat, 1 Mkr, Ul. Swaboda, Dom N16A (Beki), 271496'
+        TabOrder = 10
+      end
+      object lblTempDesc: TLabel
+        StyleName = 'lblTempDesc'
+        Anchors = [akLeft, akTop, akRight]
+        AutoSize = True
+        StyledSettings = [Family]
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 169.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 14.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 332.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'lblMain'
+        TextSettings.Font.Size = 12.500000000000000000
+        Text = 
+          'The Product Designer is responsible for articulating and concept' +
+          'ualizing our product.'
+        TabOrder = 9
+      end
+    end
+  end
+  object loHeader: TLayout
+    Align = Top
+    Size.Width = 360.000000000000000000
+    Size.Height = 56.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object reHeader: TRectangle
+      StyleName = 'header'
+      Align = Contents
+      Fill.Color = claWhite
+      Size.Width = 360.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object seHeader: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.150000005960464500
+      ShadowColor = claBlack
+    end
+    object lblTitle: TLabel
+      StyleName = 'lblTempTitle'
+      Align = Contents
+      AutoSize = True
+      StyledSettings = [Family]
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'lblMain'
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF0B1527
+      TextSettings.HorzAlign = Center
+      Text = 'Payment'
+      TabOrder = 8
+    end
+    object btnBack: TCornerButton
+      Align = Left
+      Images = DM.img
+      ImageIndex = 0
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 25.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'btnImg'
+      TabOrder = 0
+      TextSettings.Trimming = None
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+      OnClick = btnBackClick
+    end
+  end
+  object loFooter: TLayout
+    Align = Bottom
+    Position.Y = 656.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 64.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object Rectangle1: TRectangle
+      StyleName = 'container'
+      Align = Contents
+      Fill.Color = xFFFCFCFC
+      Size.Width = 360.000000000000000000
+      Size.Height = 64.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object lblRealPrice: TLabel
+        StyleName = 'lblTempPrice'
+        Anchors = [akLeft, akTop, akRight]
+        StyledSettings = [Family]
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 169.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 144.000000000000000000
+        Position.Y = 29.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'lblMain'
+        TextSettings.Font.Size = 12.500000000000000000
+        TextSettings.Font.StyleExt = {08040000000000000004000000}
+        TextSettings.FontColor = xFFE71113
+        Text = '52 TMT'
+        TabOrder = 6
+      end
+    end
+    object lblTotalPrice: TLabel
+      StyleName = 'lblTempPrice'
+      Anchors = [akLeft, akTop, akRight]
+      AutoSize = True
+      StyledSettings = [Family]
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 169.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 14.000000000000000000
+      Position.Y = 29.000000000000000000
+      Size.Width = 123.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'lblMain'
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF0B1527
+      Text = '52 TMT'
+      TabOrder = 6
+    end
+    object Label8: TLabel
+      StyleName = 'lblTempExp'
+      Anchors = [akLeft, akTop, akRight]
+      AutoSize = True
+      StyledSettings = [Family]
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 169.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 14.000000000000000000
+      Position.Y = 11.000000000000000000
+      Size.Width = 139.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'lblMain'
+      TextSettings.Font.Size = 12.500000000000000000
+      TextSettings.FontColor = xFF9E9E9E
+      Text = 'Sub Total price:'
+      TabOrder = 7
+    end
+    object btnContinue: TCornerButton
+      Align = Right
+      StyledSettings = [Family]
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 272.000000000000000000
+      Position.Y = 8.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 80.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'btnMain'
+      TabOrder = 10
+      Text = 'Done'
+      TextSettings.Font.Size = 12.500000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.Trimming = None
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+      OnClick = btnContinueClick
+    end
+    object seFooter: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 275.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.050000000745058060
+      ShadowColor = claBlack
+    end
+  end
+end
